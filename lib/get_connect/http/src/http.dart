@@ -251,6 +251,7 @@ class GetHttpClient {
       url: uri,
       headers: headers,
       decoder: decoder ?? (defaultDecoder as Decoder<T>),
+      contentLength: 0,
     ));
   }
 
